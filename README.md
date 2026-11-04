@@ -25,17 +25,21 @@
 
 ## Скриншоты игры
 
-### Лобби перед началом контракта
+### Главное меню на русском
 
-![Обновлённое лобби Ghost Exile](assets/screenshots/lobby.png)
+![Главное меню Ghost Exile на русском](assets/screenshots/main-menu.png)
 
-### Настройка контракта и выбор локации
+### Экран еженедельных заданий
 
-![Меню настройки контракта Ghost Exile](assets/screenshots/contract.png)
+![Еженедельные задания Ghost Exile на русском](assets/screenshots/weekly-tasks.png)
 
-### Ритуал изгнания
+### Лобби и информация о контракте
 
-![Ритуальная печать в Ghost Exile](assets/screenshots/exorcism.jpg)
+![Лобби Ghost Exile на русском](assets/screenshots/lobby-ru.png)
+
+### Выбор локации и сложности
+
+![Настройка контракта Ghost Exile на русском](assets/screenshots/locations-ru.png)
 
 ## Авторские права
 
