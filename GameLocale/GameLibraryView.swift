@@ -41,7 +41,10 @@ struct GameLibraryView: View {
         VStack(alignment: .leading, spacing: 24) {
             HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("GameLocale").font(.system(size: 36, weight: .bold, design: .rounded))
+                    Image("GameLocaleLogo")
+                        .resizable().scaledToFit()
+                        .frame(width: 350, height: 112)
+                        .accessibilityLabel("Game Locale")
                     Text("Русификация игр на Mac · версия 3.0")
                         .font(.title3).foregroundStyle(.secondary)
                 }

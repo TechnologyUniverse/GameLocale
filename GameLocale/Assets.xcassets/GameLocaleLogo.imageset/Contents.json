@@ -1,0 +1,12 @@
+{
+  "images": [
+    {
+      "filename": "game-locale-logo.png",
+      "idiom": "universal"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1
+  }
+}

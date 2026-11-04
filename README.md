@@ -1,5 +1,6 @@
 <p align="center"><img src="GameLocale/Assets.xcassets/TechnologyUniverse.imageset/art.png" alt="Technology Universe" width="260"></p>
-<h1 align="center">GameLocale</h1>
+<p align="center"><img src="GameLocale/Assets.xcassets/GameLocaleLogo.imageset/game-locale-logo.png" alt="Game Locale" width="660"></p>
+<h1 align="center">Game Locale</h1>
 <p align="center"><b>Русский язык и озвучка игр на Mac</b><br>CrossOver · GameHub</p>
 <p align="center">
 <img src="https://img.shields.io/badge/GameLocale-3.0_in_development-34b3bf?style=flat-square" alt="GameLocale 3.0 готовится к выпуску">
