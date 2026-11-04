@@ -2,6 +2,8 @@
 
 ![Ghost Exile](Ghost%20Exile%20RU%20macOS/Assets.xcassets/GhostHero.imageset/art.png)
 
+**Текущая версия игры — Ghost Exile 2.0.1.1.** Проверено 4 ноября 2026 года по [официальным новостям Steam](https://steamcommunity.com/app/1807080/allnews/).
+
 Приложение включает штатный русский язык меню и реплик изгнания в Steam-версии Ghost Exile через **CrossOver** и **GameHub**.
 
 ## Установка
