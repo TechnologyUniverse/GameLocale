@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SUEnableAutomaticChecks</key>
+	<false/>
+	<key>SUFeedURL</key>
+	<string>https://license.universe-files.online/ghost-exile-ru/appcast.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>9OhA6zOFtbAsJoBNr4exWmzp8/CYnHE2eGsDivz3kaM=</string>
+</dict>
+</plist>
