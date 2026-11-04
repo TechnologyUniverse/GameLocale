@@ -16,8 +16,9 @@ struct GameLocaleApp: App {
 
     var body: some Scene {
         WindowGroup("GameLocale") {
-            GameLibraryView()
+            GameLibraryView(updater: updaterController.updater)
         }
+        .defaultSize(width: 1160, height: 840)
         .windowStyle(.hiddenTitleBar)
         .commands {
             CommandGroup(after: .appInfo) {
@@ -28,7 +29,7 @@ struct GameLocaleApp: App {
 }
 
 
-private struct CheckForUpdatesButton: View {
+struct CheckForUpdatesButton: View {
     let updater: SPUUpdater
     @State private var canCheck = false
 

@@ -171,6 +171,8 @@ private enum VoiceInstaller {
 }
 
 struct PhasmophobiaVoiceView: View {
+    var isActive = true
+    var onBusyChange: (Bool) -> Void = { _ in }
     @State private var folder: URL?
     @State private var message = ""
     @State private var busy = false
@@ -185,63 +187,61 @@ struct PhasmophobiaVoiceView: View {
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
-                Color.clear
-                    .frame(height: 210)
-                    .overlay {
-                        Image("PhasmophobiaCard")
-                            .resizable().scaledToFill().allowsHitTesting(false)
+            VStack(alignment: .leading, spacing: 16) {
+                HStack(alignment: .top) {
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text("Phasmophobia").font(.system(size: 26, weight: .bold))
+                        Text("Русская озвучка · 226 записей с эффектами")
+                            .foregroundStyle(.secondary)
                     }
-                    .clipped()
-                    .overlay(alignment: .top) {
-                        Image("PhasmophobiaLogo")
-                            .resizable().scaledToFit()
-                            .frame(maxWidth: 560)
-                            .padding(.horizontal, 32).padding(.top, 10)
-                            .shadow(color: .black.opacity(0.9), radius: 8)
-                            .allowsHitTesting(false)
+                    Spacer()
+                    Text(PhasmophobiaVoiceRelease.status)
+                        .font(.caption.weight(.semibold)).foregroundStyle(.orange)
+                        .padding(.horizontal, 12).padding(.vertical, 7)
+                        .background(.orange.opacity(0.12), in: Capsule())
+                }
+                HStack(spacing: 8) {
+                    voiceChip("Диктор", icon: "mic")
+                    voiceChip("Spirit Box", icon: "antenna.radiowaves.left.and.right")
+                    voiceChip("Шёпот", icon: "waveform")
+                    voiceChip("Игровые объекты", icon: "cube")
+                }
+                HStack(spacing: 12) {
+                    Label("Установка", systemImage: "externaldrive").foregroundStyle(.secondary)
+                    Button(folderTitle, systemImage: "folder", action: select)
+                        .buttonStyle(.bordered).disabled(busy)
+                    Spacer(minLength: 0)
+                    Label("Оригиналы сохраняются", systemImage: "checkmark.shield")
+                        .font(.caption).foregroundStyle(.secondary)
+                }
+                if let folder {
+                    Text(folder.path).font(.caption2).foregroundStyle(.secondary)
+                        .lineLimit(1).truncationMode(.middle).help(folder.path)
+                }
+                HStack(spacing: 12) {
+                    Button("Установить озвучку", systemImage: "arrow.down.to.line") {
+                        Task { await install(restore: false) }
                     }
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .accessibilityHidden(true)
-                Label("Phasmophobia", systemImage: "waveform").font(.largeTitle.bold())
-                Text("Русская озвучка · версия \(PhasmophobiaVoiceRelease.version)").font(.title2)
-                Text("226 голосовых записей с эффектами").foregroundStyle(.secondary)
-                Label("Бета-версия озвучки", systemImage: "testtube.2")
-                    .font(.callout.weight(.semibold)).foregroundStyle(.orange)
-                Text("Диктор, Spirit Box, параболический микрофон, куклы, гномы, радио и телевизор. Установка всего пакета одной кнопкой; оригинальную озвучку можно вернуть.")
-                    .foregroundStyle(.secondary)
-                Text("Мужской голос · эффекты связи и призрачного шёпота · сборка Steam 25811160")
-                    .foregroundStyle(.secondary)
-                GroupBox("Прослушивание") {
-                    VStack(alignment: .leading, spacing: 12) {
-                        Text("«С возвращением! Для вас есть задания.»")
-                        Button("Послушать", systemImage: "play.fill", action: preview)
-                    }.frame(maxWidth: .infinity, alignment: .leading).padding(12)
+                    .buttonStyle(.borderedProminent).tint(.cyan)
+                    .disabled(folder == nil || resources == nil || busy)
+                    Button("Вернуть оригинал", systemImage: "arrow.uturn.backward") {
+                        Task { await install(restore: true) }
+                    }
+                    .buttonStyle(.bordered)
+                    .disabled(folder == nil || resources == nil || busy)
+                    Spacer(minLength: 0)
+                    Button("Послушать", systemImage: "play.fill", action: preview)
+                        .buttonStyle(.bordered).disabled(busy)
                 }
-                GroupBox("Установка через GameLocale") {
-                    VStack(alignment: .leading, spacing: 12) {
-                        if let folder {
-                            Text(folder.path).font(.caption).textSelection(.enabled)
-                        } else {
-                            Text("Выбери папку Phasmophobia с файлом Phasmophobia.exe.")
-                        }
-                        Button("Выбрать игру…", systemImage: "folder", action: select)
-                        HStack {
-                            Button("Установить русскую озвучку") { Task { await install(restore: false) } }
-                                .buttonStyle(.borderedProminent)
-                            Button("Вернуть оригинал") { Task { await install(restore: true) } }
-                        }
-                        .disabled(folder == nil || resources == nil || busy)
-                        Text("Перед установкой закрой игру и Steam. Оригиналы сохраняются рядом с файлами игры.")
-                            .font(.caption).foregroundStyle(.secondary)
-                    }.frame(maxWidth: .infinity, alignment: .leading).padding(12)
-                }
-                if busy { ProgressView() }
-                if !message.isEmpty { Text(message).textSelection(.enabled) }
-                Text("Пакет включает диктора, ответы Spirit Box, реплики через параболический микрофон и голоса игровых объектов. Оригинальные звуковые эффекты сохраняются. Неразборчивые шёпоты получили атмосферную русскую адаптацию. Новые реплики требуют проверки в игре.")
-                    .font(.callout).foregroundStyle(.secondary)
-            }.padding(32)
+                .controlSize(.large)
+                if busy { ProgressView("Применяем пакет…") }
+                if !message.isEmpty { Text(message).textSelection(.enabled).font(.callout) }
+                Text("Закрой игру и выйди из Steam. Пакет 0.1 beta для сборки 25811160; 12 записей содержат атмосферную адаптацию. Новые реплики требуют проверки в игре.")
+                    .font(.caption).foregroundStyle(.secondary)
+            }.padding(22)
         }
+        .onChange(of: busy) { _, value in onBusyChange(value) }
+        .onChange(of: isActive) { _, active in if !active { player?.stop() } }
         .onAppear {
             let support = FileManager.default.homeDirectoryForCurrentUser
                 .appendingPathComponent("Library/Application Support")
@@ -258,6 +258,18 @@ struct PhasmophobiaVoiceView: View {
                 }
             }
         }
+    }
+
+    private var folderTitle: String {
+        guard let folder else { return "Выбрать папку игры…" }
+        return folder.path.contains("/CrossOver/") ? "CrossOver · Steam" : "GameHub · Steam"
+    }
+
+    private func voiceChip(_ title: String, icon: String) -> some View {
+        Label(title, systemImage: icon).font(.caption)
+            .padding(.horizontal, 11).padding(.vertical, 7)
+            .background(.white.opacity(0.06), in: Capsule())
+            .overlay(Capsule().strokeBorder(.white.opacity(0.12)))
     }
 
     private func preview() {

@@ -61,6 +61,7 @@ private enum ScriptRunner {
 }
 
 struct ContentView: View {
+    var onBusyChange: (Bool) -> Void = { _ in }
     @State private var installations: [Installation] = []
     @State private var selected: Installation?
     @State private var busy = false
@@ -83,74 +84,37 @@ struct ContentView: View {
     }
 
     var body: some View {
-        VStack(spacing: 0) {
-            header
-            ScrollView {
-                VStack(alignment: .leading, spacing: 16) {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 16) {
+                HStack {
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text("Ghost Exile").font(.system(size: 26, weight: .bold))
+                        Text("Русский интерфейс и реплики ритуалов").foregroundStyle(.secondary)
+                    }
+                    Spacer()
+                    Label("CrossOver · GameHub", systemImage: "desktopcomputer")
+                        .font(.caption).foregroundStyle(.secondary)
+                }
+                HStack(alignment: .top, spacing: 14) {
                     installationCard
                     statusCard
                 }
-                .padding(24)
-                .frame(maxWidth: 760)
-                .frame(maxWidth: .infinity)
+                HStack(spacing: 12) {
+                    applyButton.buttonStyle(.borderedProminent).tint(.cyan)
+                    checkButton.buttonStyle(.bordered)
+                    Spacer(minLength: 0)
+                    Label("Резервная копия настроек", systemImage: "checkmark.shield")
+                        .font(.caption).foregroundStyle(.secondary)
+                }
+                .controlSize(.large)
+                Text("Перед применением закрой игру и выйди из Steam.")
+                    .font(.caption).foregroundStyle(.secondary)
             }
-            footer
-                .padding(.horizontal, 16)
-                .padding(.bottom, 12)
+            .padding(22)
         }
-        .background {
-            LinearGradient(
-                colors: [Color(red: 0.12, green: 0.20, blue: 0.24), .black],
-                startPoint: .topLeading, endPoint: .bottomTrailing
-            )
-        }
-        .overlay {
-            RoundedRectangle(cornerRadius: 24)
-                .strokeBorder(.white.opacity(0.13), lineWidth: 1)
-                .allowsHitTesting(false)
-                .accessibilityHidden(true)
-        }
-        .preferredColorScheme(.dark)
-        .frame(minWidth: 610, minHeight: 630)
         .onAppear(perform: discover)
         .task(id: selected) { await run(apply: false) }
-    }
-
-    private var header: some View {
-        Color.clear
-            .overlay {
-                Image("GhostHero")
-                    .resizable()
-                    .scaledToFill()
-                        .allowsHitTesting(false)
-            }
-                .clipped()
-                .accessibilityHidden(true)
-                .overlay(alignment: .bottom) {
-                    LinearGradient(
-                        colors: [.clear, .black.opacity(0.88)],
-                        startPoint: .top, endPoint: .bottom
-                    )
-                    .frame(height: 85)
-                }
-                .overlay(alignment: .bottomLeading) {
-                    HStack {
-                        Text("Русская локализация для macOS · GameHub и CrossOver")
-                            .font(.callout.weight(.semibold))
-                            .accessibilityAddTraits(.isHeader)
-                        Spacer()
-                        Text("GameLocale 3.0")
-                            .font(.caption.monospaced().weight(.semibold))
-                            .padding(.horizontal, 10)
-                            .padding(.vertical, 5)
-                            .background(.white.opacity(0.14), in: Capsule())
-                    }
-                    .foregroundStyle(.white)
-                    .padding(.horizontal, 24)
-                    .padding(.bottom, 14)
-                }
-        .frame(height: 235)
-        .background(.black)
+        .onChange(of: busy) { _, value in onBusyChange(value) }
     }
 
     private var installationCard: some View {
@@ -239,48 +203,6 @@ struct ContentView: View {
         .padding(16)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(.quaternary.opacity(0.35), in: RoundedRectangle(cornerRadius: 14))
-    }
-
-    @ViewBuilder
-    private var footer: some View {
-        if #available(macOS 26, *) {
-            footerContent.glassEffect(.regular, in: RoundedRectangle(cornerRadius: 24))
-        } else {
-            footerContent.background(.regularMaterial, in: RoundedRectangle(cornerRadius: 24))
-        }
-    }
-
-    private var footerContent: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text("Перед применением закрой игру и Steam. Приложение сохранит резервную копию.")
-                .font(.caption)
-                .foregroundStyle(.secondary)
-            HStack(spacing: 12) {
-                Image("TechnologyUniverse")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 140, height: 46)
-                    .padding(.horizontal, 8)
-                    .background(Color(red: 0.05, green: 0.07, blue: 0.10),
-                                in: RoundedRectangle(cornerRadius: 8))
-                    .accessibilityLabel("Technology Universe")
-                Spacer()
-                if #available(macOS 26, *) {
-                    checkButton.buttonStyle(.glass)
-                        .buttonBorderShape(.capsule)
-                        .controlSize(.large)
-                    applyButton.buttonStyle(.glassProminent)
-                        .buttonBorderShape(.capsule)
-                        .controlSize(.large)
-                        .tint(Color(red: 0.16, green: 0.56, blue: 0.70))
-                } else {
-                    checkButton.buttonStyle(.bordered)
-                    applyButton.buttonStyle(.borderedProminent)
-                }
-            }
-        }
-        .padding(.horizontal, 24)
-        .padding(.vertical, 14)
     }
 
     private var checkButton: some View {
