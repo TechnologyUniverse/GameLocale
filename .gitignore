@@ -7,3 +7,15 @@ build/
 *.p12
 *.p8
 *.key
+
+# Local builds and signing materials
+DerivedData/
+build/
+*.dmg
+*.zip
+*.p12
+*.p8
+*.key
+xcuserdata/
+*.xcuserstate
+.DS_Store

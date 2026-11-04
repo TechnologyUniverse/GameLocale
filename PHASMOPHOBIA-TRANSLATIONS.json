@@ -1,0 +1,852 @@
+{
+  "resources.assets:3910": {
+    "text": "Близкая встреча.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:3913": {
+    "text": "Звёздочка, свети, свети. Что за тайна скрыта в вышине?",
+    "group": "doll_song",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:3916": {
+    "text": "Давай играть в прятки.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:3917": {
+    "text": "Звёздочка, свети, свети. Что за тайна скрыта в вышине?",
+    "group": "doll_song",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:3918": {
+    "text": "Трагическое убийство.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:3922": {
+    "text": "С тобой играть мне нравится больше всего.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:3928": {
+    "text": "Возьми меня с собой.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:3932": {
+    "text": "Далеко идущие.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:3933": {
+    "text": "Преступление на почве ненависти.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:3939": {
+    "text": "Акт ненависти.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:3940": {
+    "text": "Возьми меня с собой.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:3945": {
+    "text": "Далеко от дома.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:3946": {
+    "text": "Будем вместе навсегда.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:3949": {
+    "text": "Жестокое убийство.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:3951": {
+    "text": "Пожилая жертва.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:3954": {
+    "text": "Молодой нападавший.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:3958": {
+    "text": "Мы по кругу все идём, розы в фартучке несём. Апчхи! Апчхи! Все упали!",
+    "group": "doll_song",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:3962": {
+    "text": "Я потерялся.",
+    "group": "parabolic",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:3963": {
+    "text": "Убийств.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:3966": {
+    "text": "Давай играть в прятки.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:3982": {
+    "text": "Нападение.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:3984": {
+    "text": "Сзади.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:3985": {
+    "text": "Саймон говорит: подойди поближе.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:3989": {
+    "text": "Ударили сзади.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:3993": {
+    "text": "Нападение.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4009": {
+    "text": "Будем вместе навсегда.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4011": {
+    "text": "Убийство.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4016": {
+    "text": "Далеко.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4034": {
+    "text": "Молодой человек.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4035": {
+    "text": "С тобой играть мне нравится больше всего.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4040": {
+    "text": "Прямо здесь.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4046": {
+    "text": "Подвергся нападению.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4047": {
+    "text": "Убирайся!",
+    "group": "parabolic",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4053": {
+    "text": "Эй!",
+    "group": "parabolic",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4058": {
+    "text": "Ты мой любимый.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4060": {
+    "text": "Молодой человек.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4065": {
+    "text": "Пожилой человек.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4066": {
+    "text": "Ты меня не найдёшь.",
+    "group": "parabolic",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4068": {
+    "text": "Здесь, в нашем районе.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4073": {
+    "text": "Останься со мной навсегда.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4074": {
+    "text": "Пожалуйста, останься со мной.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4076": {
+    "text": "Будешь моим другом?",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4080": {
+    "text": "Ты будешь моим другом.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4081": {
+    "text": "Кто не спрятался, я не виноват!",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4082": {
+    "text": "Далеко идущие.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4086": {
+    "text": "Здесь, в нашем районе.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4087": {
+    "text": "На почве ненависти.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4092": {
+    "text": "Я так голоден.",
+    "group": "parabolic",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4094": {
+    "text": "Ты мой лучший друг.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4095": {
+    "text": "Помоги мне.",
+    "group": "parabolic",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4099": {
+    "text": "Ты мой любимый.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4113": {
+    "text": "Преступление на почве ненависти.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4116": {
+    "text": "Давай играть в прятки.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4119": {
+    "text": "Далеко вокруг.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4120": {
+    "text": "Пострадали.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4124": {
+    "text": "Холодно.",
+    "group": "parabolic",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4127": {
+    "text": "Давай играть в прятки.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4130": {
+    "text": "Мы по кругу все идём, розы в фартучке несём. Апчхи! Апчхи! Все упали!",
+    "group": "doll_song",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4135": {
+    "text": "Почему? Почему? Почему? Почему? Почему?",
+    "group": "parabolic",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4136": {
+    "text": "Близко к.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4145": {
+    "text": "Унесли.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4150": {
+    "text": "Останься со мной навсегда.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4152": {
+    "text": "Ненависти.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4156": {
+    "text": "Получил травмы.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4170": {
+    "text": "Возьми меня с собой.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4171": {
+    "text": "Заключительное слово.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4179": {
+    "text": "Убирайся!",
+    "group": "parabolic",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4191": {
+    "text": "Поблизости.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4194": {
+    "text": "В тесном сообществе.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4195": {
+    "text": "Человек погиб.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4198": {
+    "text": "Убирайся!",
+    "group": "parabolic",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4201": {
+    "text": "Молодой человек.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4206": {
+    "text": "Больше никаких игр.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4208": {
+    "text": "Акт ненависти.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4213": {
+    "text": "Давай играть в прятки.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4220": {
+    "text": "Здесь, в нашем районе.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4221": {
+    "text": "Пострадали.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4227": {
+    "text": "Близко к концу.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4229": {
+    "text": "Сзади.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4244": {
+    "text": "Эй!",
+    "group": "parabolic",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4249": {
+    "text": "Пострадали.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4250": {
+    "text": "Пожилая жертва.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4257": {
+    "text": "Давай играть в прятки.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4262": {
+    "text": "Будем вместе навсегда.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4265": {
+    "text": "Трагическая смерть.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4269": {
+    "text": "Звёздочка, свети, свети. Что за тайна скрыта в вышине?",
+    "group": "doll_song",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4270": {
+    "text": "Больше никаких игр.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4271": {
+    "text": "Возьми меня с собой.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4282": {
+    "text": "Я слежу за тобой.",
+    "group": "parabolic",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4283": {
+    "text": "Молодого человека.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4284": {
+    "text": "Трагическая смерть.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4285": {
+    "text": "Нашли далеко от дома.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4286": {
+    "text": "Ускользает.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4288": {
+    "text": "Акт убийства.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4293": {
+    "text": "Молодой нападавший.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4295": {
+    "text": "Этот человек погиб.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4298": {
+    "text": "Ты мой особенный друг.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4300": {
+    "text": "Давай играть в прятки.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4301": {
+    "text": "Смерть в семье.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4302": {
+    "text": "Останься со мной, пожалуйста.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4304": {
+    "text": "Смерти.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4305": {
+    "text": "Саймон говорит: подойди поближе.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4307": {
+    "text": "Возьми меня с собой.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4312": {
+    "text": "Далеко от дома.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4314": {
+    "text": "Возьми меня с собой.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4319": {
+    "text": "Акт убийства.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4322": {
+    "text": "Давай играть в прятки.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4323": {
+    "text": "Унесли.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4324": {
+    "text": "Будешь моим другом?",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4336": {
+    "text": "Пострадали.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4340": {
+    "text": "Жизнь здесь.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4349": {
+    "text": "Будем вместе навсегда.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4357": {
+    "text": "Уносят.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4370": {
+    "text": "Пожилой человек.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4371": {
+    "text": "Будешь моим другом?",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4378": {
+    "text": "Кто не спрятался, я не виноват!",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4381": {
+    "text": "Мы по кругу все идём, розы в фартучке несём. Апчхи! Апчхи! Все упали!",
+    "group": "doll_song",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4385": {
+    "text": "Нападение.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4387": {
+    "text": "Ты мой особенный друг.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4388": {
+    "text": "Сзади.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4396": {
+    "text": "Пострадали.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4398": {
+    "text": "Почему? Почему? Почему? Почему?",
+    "group": "parabolic",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4400": {
+    "text": "Саймон говорит: подойди поближе.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4405": {
+    "text": "Пожилой житель.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4411": {
+    "text": "Позади.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4413": {
+    "text": "Унесли.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4418": {
+    "text": "Прямо здесь.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4419": {
+    "text": "Будешь моим другом?",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4420": {
+    "text": "Пожилой житель.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4422": {
+    "text": "Будем вместе навсегда.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4429": {
+    "text": "Эй!",
+    "group": "parabolic",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4431": {
+    "text": "Нападение оставило.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4434": {
+    "text": "Давай поиграем.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4437": {
+    "text": "Унесли.",
+    "group": "spirit_box",
+    "basis": "semantic audio label; fragment ASR requires listening"
+  },
+  "resources.assets:4439": {
+    "text": "Будь моим лучшим другом.",
+    "group": "doll",
+    "basis": "semantic audio label + transcript review"
+  },
+  "resources.assets:4239": {
+    "text": "Люди, люди сходят с ума от ожидания.",
+    "group": "parabolic",
+    "basis": "ASR transcript reviewed; in-game listening still required"
+  },
+  "resources.assets:4394": {
+    "text": "Ты мой!",
+    "group": "ghost",
+    "basis": "ASR transcript reviewed; in-game listening still required"
+  },
+  "sharedassets4.assets:3696": {
+    "text": "Ту-ту!",
+    "group": "doll",
+    "basis": "ASR transcript reviewed; in-game listening still required"
+  },
+  "sharedassets4.assets:3758": {
+    "text": "Эй!",
+    "group": "doll",
+    "basis": "ASR transcript reviewed; in-game listening still required"
+  },
+  "sharedassets4.assets:3949": {
+    "text": "Ох, совсем я иссох.",
+    "group": "doll",
+    "basis": "ASR transcript reviewed; in-game listening still required"
+  },
+  "sharedassets4.assets:3974": {
+    "text": "Ну и потрепала меня погода.",
+    "group": "doll",
+    "basis": "ASR transcript reviewed; in-game listening still required"
+  },
+  "sharedassets4.assets:4026": {
+    "text": "Эй, ты! Не забудь постучать!",
+    "group": "doll",
+    "basis": "ASR transcript reviewed; in-game listening still required"
+  },
+  "sharedassets4.assets:4075": {
+    "text": "Гном, милый гном.",
+    "group": "doll",
+    "basis": "ASR transcript reviewed; in-game listening still required"
+  },
+  "sharedassets4.assets:4316": {
+    "text": "Коси сено, пока светит солнце!",
+    "group": "doll",
+    "basis": "ASR transcript reviewed; in-game listening still required"
+  },
+  "sharedassets4.assets:4526": {
+    "text": "Эй, ты! Не забудь постучать!",
+    "group": "doll",
+    "basis": "ASR transcript reviewed; in-game listening still required"
+  },
+  "sharedassets4.assets:4561": {
+    "text": "Давно не виделись!",
+    "group": "doll",
+    "basis": "ASR transcript reviewed; in-game listening still required"
+  },
+  "resources.assets:4212": {
+    "text": "Мы по кругу все идём, розы в фартучке несём.",
+    "group": "doll_song",
+    "basis": "ASR transcript reviewed; in-game listening still required"
+  },
+  "resources.assets:4012": {
+    "text": "Ужасная гибель. В жутком, чудовищном преступлении. Произошла трагедия. Пострадали жители тесного сообщества. Бессмысленный акт насилия. Гибель людей. Шокирующее событие. Жизнь оборвалась. Смерть. Смерть. Смерть.",
+    "group": "radio",
+    "basis": "ASR transcript reviewed; in-game listening still required"
+  },
+  "sharedassets64.assets:113": {
+    "text": "Всё больше охотников за призраками брались за этот контракт. Невозмутимо они изгоняли теневых существ, с которыми сталкивались лицом к лицу. Но до сих пор, пока не прочли найденную страницу, они не знали: чем больше становилось охотников и чем чаще читали текст, тем сильнее переписывалась реальность. Один случай, чья-то субъективная реальность, множился и отражался эхом, превращаясь во всеобщую истину, в саму действительность. Никто, казалось, не знал, известно ли об этом GHD. Это с самого начала входило в их план? Или стало зловещим побочным эффектом, которого они не замечали? Как бы то ни было, за работу исследователи получали удостоверение с фольгированным покрытием.",
+    "group": "tv",
+    "basis": "Full ASR transcript translated; event playtest required"
+  },
+  "sharedassets64.assets:115": {
+    "text": "Пока мы молоды, танцуем на солнце. Потом — годы труда и семьи. В доме мы молча страдаем. На закате жизни идём к затонувшему берегу. И плывём через море ночи, море сновидений, отдавая себя волнам.",
+    "group": "tv",
+    "basis": "Full ASR transcript translated; event playtest required"
+  },
+  "sharedassets64.assets:116": {
+    "text": "Мой час настал, и вот я здесь, чтобы одарить их любовью. Добрый и щедрый поступок. Снести им головы — и образно, и буквально. Всей милой семье, что меня призвала. Сначала девчонка. Я сталкиваю её с дерева. Шея ломается. Забавный хруст. Я радостно хихикаю. Тут мать издаёт отвратительный звук. Я вонзаю нож ей в глаз. Она вздыхает и затихает. Отца и младенца оставляю напоследок. Не хочу, чтобы всё кончилось слишком быстро. Он прижимает её к себе и бежит от меня. Но я всё ещё вижу их. Всё ещё вижу. Я стреляю из пистолета лишь раз. Пуля пронзает больше одного сердца. Вот оно, моё произведение искусства. Мой великий труд завершён. Я мистер Скрэтч, дьявол, бог-трикстер. Я выхожу из тьмы. Настал мой час под солнцем.",
+    "group": "tv",
+    "basis": "Full ASR transcript translated; event playtest required"
+  },
+  "sharedassets64.assets:117": {
+    "text": "В лесу он застрелил лося, а олениху не тронул. Он привёл её домой и сделал своей женой. Мы смеялись, но он объяснил: «Олениха мне дорога. И не в одном смысле. А вот лосиный стейк — всегда удачный выбор».",
+    "group": "tv",
+    "basis": "Full ASR transcript translated; event playtest required"
+  },
+  "sharedassets64.assets:120": {
+    "text": "Что-то изменилось. Исследователь понял это сразу. Контракты GHD на охоту за призраками всегда были странными, но здесь было нечто иное. Кроме очевидных перемен в комнате — телевизоров, рисунков мелом — чувствовалось что-то ещё, едва уловимое. Тёмное, незримое присутствие давило на ткань реальности, готовясь переписать её ради непостижимой цели. Ощущение исходило от пишущей машинки, возникшей посреди комнаты. Едва слышный стук клавиш скорее чудился, чем звучал на самом деле. Рассказ на странице, которую сейчас читал исследователь, описывал то, что происходило с ним в этот самый миг. Он оказался в ловушке истории.",
+    "group": "tv",
+    "basis": "Full ASR transcript translated; event playtest required"
+  },
+  "sharedassets64.assets:122": {
+    "text": "Более тёмное место просачивалось сюда, бросало тень, накладывалось на этот мир. Куда бы ни смотрел исследователь, везде были следы столкновения двух миров: проблески тайны, дразнящие подсказки, чужеродные предметы и знаки. Но ничто не раскрывало её целиком. Это была приманка, затягивающая внутрь, однако в головоломке недоставало слишком многих деталей. Эту историю рассказывали где-то ещё, там, где были написаны страницы рукописи. Оттуда её автор отчаянно тянулся к свету. И тем самым грозил выпустить наружу тьму своей темницы. Оттуда же появился и брелок в виде ангельской лампы. Там его сила была куда больше, чем могла стать здесь.",
+    "group": "tv",
+    "basis": "Full ASR transcript translated; event playtest required"
+  },
+  "sharedassets64.assets:127": {
+    "text": "Когда-то самодельные куклы служили другой цели и участвовали в деле, которое вёл другой исследователь. Теперь писатель присвоил их, переписал их прошлое и заставил служить этой истории. Может, в этом был глубокий смысл, а может, просто удачно сложились обстоятельства. Истина была за пределами чьего-либо понимания. Исследователь замер, размышляя о тайне страниц. Их происхождение скрывала тьма. Были ли они написаны с благословения GHD? Почему-то это казалось маловероятным, хотя и прошлое самой компании было окутано мраком.",
+    "group": "tv",
+    "basis": "Full ASR transcript translated; event playtest required"
+  },
+  "sharedassets64.assets:128": {
+    "text": "Исследователь осветил комнату ультрафиолетом. Как и предсказывала страница, проступила неровная спираль слов, светясь в фиолетовом полумраке. Рассудок не мог найти в них смысла. Они казались бессмыслицей, той материей, из которой сотканы сны. И потому в них таились великая сила и скрытые значения. При переходе из одной реальности в другую они безнадёжно терялись в переводе, просачиваясь сюда. Только автор знал, что это означает. И вполне возможно, он сам был совершенно безумен.",
+    "group": "tv",
+    "basis": "Full ASR transcript translated; event playtest required"
+  },
+  "sharedassets64.assets:129": {
+    "text": "Исследователь справился, защитил своих и оказался на краю бездонной тьмы новой тайны. Такой же странной, но иной, чем те, с которыми он сталкивался, работая на GHD. Прочитанные страницы заронили в его разум жажду разгадать её, увлекая всё глубже, навстречу судьбе, столь же ужасной, сколь и чудесной. Это было приглашение, но и предупреждение: если он пойдёт дальше, то, возможно, уже не сможет вернуться. В центре найденного титульного листа была лишь одна подсказка: имя писателя, скрытого во тьме за пределами их реальности. Писателя по имени Алан Уэйк.",
+    "group": "tv",
+    "basis": "Full ASR transcript translated; event playtest required"
+  },
+  "sharedassets64.assets:131": {
+    "text": "Фазмофобия. Автор — Алан Уэйк.",
+    "group": "tv",
+    "basis": "Full ASR transcript translated; event playtest required"
+  },
+  "resources.assets:3988": {
+    "text": "Не оборачивайся. Я стою у тебя за спиной.",
+    "group": "ghost",
+    "basis": "Atmospheric Russian adaptation explicitly approved by user; original words unintelligible"
+  },
+  "resources.assets:4108": {
+    "text": "Я помню этот дом. Они оставили меня здесь. Никто не пришёл. Теперь ты останешься со мной.",
+    "group": "ghost",
+    "basis": "Atmospheric Russian adaptation explicitly approved by user; original words unintelligible"
+  },
+  "resources.assets:4126": {
+    "text": "Тише. Они слышат нас. Свет гаснет. Не уходи.",
+    "group": "ghost",
+    "basis": "Atmospheric Russian adaptation explicitly approved by user; original words unintelligible"
+  },
+  "resources.assets:4174": {
+    "text": "Я вижу тебя. Ты меня не видишь. Но я рядом.",
+    "group": "ghost",
+    "basis": "Atmospheric Russian adaptation explicitly approved by user; original words unintelligible"
+  },
+  "resources.assets:4183": {
+    "text": "Не входи. За этой дверью кто-то есть. Я слышу шаги. Они всё ближе. Не дай им найти меня.",
+    "group": "ghost",
+    "basis": "Atmospheric Russian adaptation explicitly approved by user; original words unintelligible"
+  },
+  "resources.assets:4193": {
+    "text": "Помоги мне. Ты слышишь меня? Пожалуйста, помоги. Не оставляй меня здесь. Где ты? Здесь так темно. Я не могу найти выход. Слышишь шаги? Это не я. Не оборачивайся. Они уже рядом. Я звал, но никто не пришёл. Теперь я слышу тебя. Я знаю, где ты прячешься. Не выключай свет. Останься со мной. Здесь никто не услышит твой крик. Помоги мне.",
+    "group": "ghost",
+    "basis": "Atmospheric Russian adaptation explicitly approved by user; original words unintelligible"
+  },
+  "resources.assets:4200": {
+    "text": "Ты здесь. Я слышу тебя. Ты совсем рядом.",
+    "group": "ghost",
+    "basis": "Atmospheric Russian adaptation explicitly approved by user; original words unintelligible"
+  },
+  "resources.assets:4287": {
+    "text": "Не уходи. Ты обещал остаться. Я жду тебя в темноте.",
+    "group": "ghost",
+    "basis": "Atmospheric Russian adaptation explicitly approved by user; original words unintelligible"
+  },
+  "sharedassets4.assets:4039": {
+    "text": "Ты слышишь нас? Мы здесь. Мы всегда были здесь. Подойди ближе.",
+    "group": "ghost",
+    "basis": "Atmospheric Russian adaptation explicitly approved by user; original words unintelligible"
+  },
+  "sharedassets5.assets:2188": {
+    "text": "Тебе не следовало сюда приходить.",
+    "group": "ghost",
+    "basis": "Atmospheric Russian adaptation explicitly approved by user; original words unintelligible"
+  },
+  "resources.assets:4311": {
+    "text": "Вы слушаете ночной эфир. В городе вновь пропал человек. Жителей просят оставаться дома. Если вы услышите стук в дверь, не открывайте. Повторяем: не открывайте дверь. Телефонная связь прервана. Мы пытаемся восстановить сигнал. Оставайтесь на нашей волне. Мы вернёмся после короткого перерыва.",
+    "group": "radio",
+    "basis": "Atmospheric adaptation of unintelligible radio montage; not a literal transcript"
+  },
+  "resources.assets:4373": {
+    "text": "Прошлой ночью мне снился сон. Мне снилось то, что было прежде. Снилась моя любовь. Мне так нужна любовь. А теперь — новости. В результате ужасающего происшествия здесь, в самом сердце нашего города, была жестоко оборвана жизнь. Это шокирующий акт насилия. Пока нет сведений о том, кто или что могло лишить жизни эту несчастную женщину.",
+    "group": "radio",
+    "basis": "Translated intelligible news; opening music words adapted from partial ASR"
+  }
+}

@@ -1,6 +1,6 @@
 //
-//  Ghost_Exile_RU_macOSApp.swift
-//  Ghost Exile RU macOS
+//  GameLocaleApp.swift
+//  GameLocale
 //
 //  Created by Andrei on 11/3/26.
 //
@@ -9,14 +9,14 @@ import Sparkle
 import SwiftUI
 
 @main
-struct Ghost_Exile_RU_macOSApp: App {
+struct GameLocaleApp: App {
     private let updaterController = SPUStandardUpdaterController(
         startingUpdater: true, updaterDelegate: nil, userDriverDelegate: nil
     )
 
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        WindowGroup("GameLocale") {
+            GameLibraryView()
         }
         .windowStyle(.hiddenTitleBar)
         .commands {

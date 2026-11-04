@@ -117,11 +117,13 @@ struct ContentView: View {
     }
 
     private var header: some View {
-        GeometryReader { geometry in
-            Image("GhostHero")
-                .resizable()
-                .scaledToFill()
-                .frame(width: geometry.size.width, height: geometry.size.height)
+        Color.clear
+            .overlay {
+                Image("GhostHero")
+                    .resizable()
+                    .scaledToFill()
+                        .allowsHitTesting(false)
+            }
                 .clipped()
                 .accessibilityHidden(true)
                 .overlay(alignment: .bottom) {
@@ -137,7 +139,7 @@ struct ContentView: View {
                             .font(.callout.weight(.semibold))
                             .accessibilityAddTraits(.isHeader)
                         Spacer()
-                        Text("v2.0")
+                        Text("GameLocale 3.0")
                             .font(.caption.monospaced().weight(.semibold))
                             .padding(.horizontal, 10)
                             .padding(.vertical, 5)
@@ -147,7 +149,6 @@ struct ContentView: View {
                     .padding(.horizontal, 24)
                     .padding(.bottom, 14)
                 }
-        }
         .frame(height: 235)
         .background(.black)
     }
