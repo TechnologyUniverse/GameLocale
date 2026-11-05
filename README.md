@@ -1,17 +1,16 @@
 <p align="center"><img src="GameLocale/Assets.xcassets/TechnologyUniverse.imageset/art.png" alt="Technology Universe" width="260"></p>
 <p align="center"><img src="GameLocale/Assets.xcassets/GameLocaleLogo.imageset/game-locale-logo.png" alt="Game Locale" width="660"></p>
 <h1 align="center">Game Locale</h1>
-<p align="center"><b>Русская озвучка игр на Mac и Windows</b><br>Steam · CrossOver · GameHub</p>
+<p align="center"><b>Агрегатор для установки русской озвучки игр на Mac и Windows</b><br>Steam · CrossOver · GameHub</p>
 <p align="center">
 <img src="https://img.shields.io/badge/GameLocale-3.0-34b3bf?style=flat-square" alt="GameLocale 3.0">
-<img src="https://img.shields.io/badge/Phasmophobia_RU-0.1_beta-e8a442?style=flat-square" alt="Phasmophobia RU 0.1 beta">
 <img src="https://img.shields.io/badge/Apple_Silicon-arm64-34b3bf?style=flat-square" alt="Только Apple Silicon">
 <img src="https://img.shields.io/badge/macOS-14%2B-333333?style=flat-square&amp;logo=apple" alt="macOS 14+">
 <img src="https://img.shields.io/badge/Windows-11_x64-0078D4?style=flat-square" alt="Windows 11 x64">
 </p>
-<p align="center"><a href="#игры">Игры</a> · <a href="#история-версий">История версий</a> · <a href="#авторские-права">Авторские права</a></p>
+<p align="center"><a href="#игры-в-версии-30">Поддерживаемые игры</a> · <a href="#история-версий">История версий</a> · <a href="#авторские-права">Авторские права</a></p>
 
-**Game Locale 3.0 доступен для macOS и Windows.** Русскую озвучку Phasmophobia можно установить на обеих платформах. На Mac приложение также включает русский интерфейс и реплики ритуалов в Ghost Exile.
+**Game Locale** объединяет игровые локализации в одной библиотеке. Выбери игру, чтобы узнать, какая русская озвучка доступна для твоей платформы. Для поддерживаемых пакетов приложение помогает найти установку игры, применить озвучку и при необходимости восстановить оригинальные файлы.
 
 <p align="center"><a href="https://github.com/TechnologyUniverse/GameLocale/releases/download/v3.0/Game-Locale-3.0-Apple-Silicon.dmg"><b>⬇ Скачать для Mac (.dmg)</b></a> · <a href="https://github.com/TechnologyUniverse/GameLocale/releases/download/v3.0/Game-Locale-3.0-Windows-x64.exe"><b>⬇ Скачать для Windows x64 (.exe)</b></a><br><a href="https://github.com/TechnologyUniverse/GameLocale/releases/tag/v3.0">Что нового в релизе</a></p>
 
@@ -21,8 +20,6 @@
 | **Windows** | Windows 11 x64, установленная игра в Steam |
 
 ## ✨ Что нового в 3.0
-
-**Новое имя. Две игры. Одна библиотека.**
 
 | | В этом выпуске |
 | --- | --- |
@@ -54,7 +51,9 @@
 
 [Архивный Ghost Exile RU 2.0](https://github.com/TechnologyUniverse/GameLocale/releases/tag/v2.0) остаётся доступен; озвучки Phasmophobia в нём нет.
 
-## Игры
+## Игры в версии 3.0
+
+Здесь перечислены локализации, доступные в текущей версии Game Locale. Каталог рассчитан на добавление новых игр.
 
 <table><tr><td width="50%"><img src="GameLocale/Assets.xcassets/GhostHero.imageset/art.png" alt="Ghost Exile" width="100%"></td><td width="50%"><img src="GameLocale/Assets.xcassets/PhasmophobiaCard.imageset/phasmophobia-card.png" alt="Phasmophobia" width="100%"></td></tr></table>
 
