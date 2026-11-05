@@ -88,7 +88,7 @@ GameLocale помогает включить русский язык в Ghost Ex
 
 Поиск установки, проверка языка и включение русификации через CrossOver или GameHub.
 
-![Game Locale 3.0 — панель Ghost Exile](assets/screenshots/app-ghost-exile.png)
+![Game Locale 3.0 — панель Ghost Exile](assets/screenshots/app-ghost-exile-clean.png)
 
 ### Phasmophobia · русская озвучка 0.1 beta
 
