@@ -80,14 +80,21 @@ GameLocale помогает включить русский язык в Ghost Ex
 
 Релиз 2.0 сохраняется в истории для пользователей прежнего приложения.
 
-## Ghost Exile на русском
+## Как выглядит приложение
 
-Пользователь подтвердил работу русского интерфейса и реплик ритуалов через CrossOver и GameHub. Скриншоты сделаны в игре после применения локализации.
+**Одна библиотека — функции выбранной игры под рукой.**
 
-<table>
-<tr><td width="50%"><b>Главное меню</b><br><img src="assets/screenshots/main-menu.png" alt="Главное меню Ghost Exile на русском" width="100%"></td><td width="50%"><b>Задания</b><br><img src="assets/screenshots/weekly-tasks.png" alt="Задания Ghost Exile на русском" width="100%"></td></tr>
-<tr><td><b>Лобби и контракт</b><br><img src="assets/screenshots/lobby-ru.png" alt="Лобби Ghost Exile на русском" width="100%"></td><td><b>Локации и сложность</b><br><img src="assets/screenshots/locations-ru.png" alt="Локации Ghost Exile на русском" width="100%"></td></tr>
-</table>
+### Ghost Exile · русский интерфейс и ритуалы
+
+Поиск установки, проверка языка и включение русификации через CrossOver или GameHub.
+
+![Game Locale 3.0 — панель Ghost Exile](assets/screenshots/app-ghost-exile.png)
+
+### Phasmophobia · русская озвучка 0.1 beta
+
+226 записей с эффектами. Прослушай пример, установи озвучку или верни оригинал.
+
+![Game Locale 3.0 — панель Phasmophobia](assets/screenshots/app-phasmophobia.png)
 
 ## Авторские права
 
