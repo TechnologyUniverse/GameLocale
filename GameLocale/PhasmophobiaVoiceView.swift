@@ -1,4 +1,4 @@
-import AVFoundation
+import Foundation
 import CryptoKit
 import Darwin
 import SwiftUI
@@ -176,7 +176,8 @@ struct PhasmophobiaVoiceView: View {
     @State private var folder: URL?
     @State private var message = ""
     @State private var busy = false
-    @State private var player: AVAudioPlayer?
+    @State private var previewProcess: Process?
+    @State private var previewPlaying = false
 
     private var resources: URL? {
         guard let root = Bundle.main.resourceURL else { return nil }
@@ -230,7 +231,10 @@ struct PhasmophobiaVoiceView: View {
                     .buttonStyle(.bordered)
                     .disabled(folder == nil || resources == nil || busy)
                     Spacer(minLength: 0)
-                    Button("Послушать", systemImage: "play.fill", action: preview)
+                    Button(previewPlaying ? "Остановить" : "Послушать",
+                           systemImage: previewPlaying ? "stop.fill" : "play.fill") {
+                        if previewPlaying { stopPreview() } else { preview() }
+                    }
                         .buttonStyle(.bordered).disabled(busy)
                 }
                 .controlSize(.large)
@@ -241,7 +245,8 @@ struct PhasmophobiaVoiceView: View {
             }.padding(22)
         }
         .onChange(of: busy) { _, value in onBusyChange(value) }
-        .onChange(of: isActive) { _, active in if !active { player?.stop() } }
+        .onChange(of: isActive) { _, active in if !active { stopPreview() } }
+        .onDisappear(perform: stopPreview)
         .onAppear {
             let support = FileManager.default.homeDirectoryForCurrentUser
                 .appendingPathComponent("Library/Application Support")
@@ -274,10 +279,43 @@ struct PhasmophobiaVoiceView: View {
 
     private func preview() {
         guard let resources else { message = "Аудиопакет отсутствует."; return }
+        let file = resources.appendingPathComponent("dispatcher-preview.wav")
+        guard FileManager.default.isReadableFile(atPath: file.path) else {
+            message = "Файл примера озвучки отсутствует или недоступен. Переустанови приложение."
+            return
+        }
+        stopPreview()
+        let process = Process()
+        let errors = Pipe()
+        process.executableURL = URL(fileURLWithPath: "/usr/bin/afplay")
+        process.arguments = [file.path]
+        process.standardOutput = FileHandle.nullDevice
+        process.standardError = errors
         do {
-            player = try AVAudioPlayer(contentsOf: resources.appendingPathComponent("dispatcher-preview.wav"))
-            player?.play()
+            try process.run()
+            previewProcess = process
+            previewPlaying = true
+            Task {
+                let result = await Task.detached {
+                    let diagnostic = errors.fileHandleForReading.readDataToEndOfFile()
+                    process.waitUntilExit()
+                    return (process.terminationStatus, String(decoding: diagnostic, as: UTF8.self))
+                }.value
+                guard previewProcess === process else { return }
+                previewProcess = nil
+                previewPlaying = false
+                if result.0 != 0 {
+                    message = "Не удалось воспроизвести пример. " + result.1
+                }
+            }
         } catch { message = error.localizedDescription }
+    }
+
+    private func stopPreview() {
+        let process = previewProcess
+        previewProcess = nil
+        previewPlaying = false
+        if let process, process.isRunning { process.terminate() }
     }
 
     private func select() {
@@ -285,17 +323,20 @@ struct PhasmophobiaVoiceView: View {
         panel.canChooseFiles = false
         panel.canChooseDirectories = true
         panel.directoryURL = folder
-        guard panel.runModal() == .OK, let selected = panel.url else { return }
-        guard FileManager.default.fileExists(atPath: selected.appendingPathComponent("Phasmophobia.exe").path) else {
-            message = "Выбери папку, в которой находится Phasmophobia.exe."
-            return
+        FolderSheet.present(panel) { response in
+            guard response == .OK, let selected = panel.url else { return }
+            guard FileManager.default.fileExists(atPath: selected.appendingPathComponent("Phasmophobia.exe").path) else {
+                message = "Выбери папку, в которой находится Phasmophobia.exe."
+                return
+            }
+            folder = selected
+            message = ""
         }
-        folder = selected
-        message = ""
     }
 
     private func install(restore: Bool) async {
         guard let folder, let resources, !busy else { return }
+        stopPreview()
         busy = true
         defer { busy = false }
         do {

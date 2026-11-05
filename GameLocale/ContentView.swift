@@ -141,29 +141,20 @@ struct ContentView: View {
         .disabled(busy)
     }
 
-    @ViewBuilder
     private var installationActions: some View {
-        if #available(macOS 26, *) {
-            installationButtons
-                .buttonStyle(.glass)
-                .buttonBorderShape(.capsule)
-                .controlSize(.regular)
-        } else {
-            installationButtons
-                .buttonStyle(.bordered)
-        }
-    }
-
-    private var installationButtons: some View {
-        HStack(spacing: 10) {
+        VStack(alignment: .leading, spacing: 8) {
             Button("Найти снова", systemImage: "arrow.clockwise", action: discover)
-            Menu("Выбрать папку…", systemImage: "folder") {
+            HStack(spacing: 8) {
                 ForEach(Installation.Launcher.allCases, id: \.self) { launcher in
-                    Button(launcher.rawValue) { chooseFolder(for: launcher) }
+                    Button(launcher.rawValue, systemImage: "folder") {
+                        chooseFolder(for: launcher)
+                    }
+                    .help("Выбрать папку \(launcher.rawValue)")
                 }
             }
-            .fixedSize()
         }
+        .buttonStyle(.bordered)
+        .controlSize(.small)
     }
 
     private var statusCard: some View {
@@ -234,14 +225,16 @@ struct ContentView: View {
         panel.canChooseFiles = false
         panel.canChooseDirectories = true
         panel.directoryURL = launcher.directory
-        guard panel.runModal() == .OK, let folder = panel.url else { return }
-        guard Installation.containsGame(folder) else {
-            notice = "В выбранной папке нет манифеста Ghost Exile. Выбери папку, в которой находится drive_c."
-            return
+        FolderSheet.present(panel) { response in
+            guard response == .OK, let folder = panel.url else { return }
+            guard Installation.containsGame(folder) else {
+                notice = "В выбранной папке нет манифеста Ghost Exile. Выбери папку, в которой находится drive_c."
+                return
+            }
+            let installation = Installation(launcher: launcher, folder: folder)
+            if !installations.contains(installation) { installations.append(installation) }
+            selected = installation
         }
-        let installation = Installation(launcher: launcher, folder: folder)
-        if !installations.contains(installation) { installations.append(installation) }
-        selected = installation
     }
 
     private func run(apply: Bool) async {
